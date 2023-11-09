@@ -1,20 +1,20 @@
 import React from 'react'
 import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux'
-import {
-  incrementByAmount,
-} from '../../slices/counterSlice'
+// import {
+//   incrementByAmount,
+// } from '../../slices/counterSlice'
 
 
 function Sidebar() {
 
-  function SelectChat(i) {
-    useDispatch(incrementByAmount(i))
-  }
+  // function SelectChat(i) {
+  //   useDispatch(incrementByAmount(i))
+  // }
 
   var indents = [];
   for (var i = 0; i <= 50; i++) {
-    indents.push(<MessageRoom onClick={SelectChat(i)}>
+    indents.push(<MessageRoom>
       <ProfilePicture><ProfilePictureImage src='https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o='></ProfilePictureImage></ProfilePicture>
                 <ProfileName>kdjasf_{i}</ProfileName>
               </MessageRoom>);
