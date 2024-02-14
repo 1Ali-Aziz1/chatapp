@@ -25,14 +25,12 @@ function Sidebar() {
   }
 
   return (
-    <div>
       <Container>
         <Searchbar placeholder='Search...'/>
         <Line></Line>
         <ShowMessageRooms></ShowMessageRooms>
         {/* {ShowMessageRooms()} */}
       </Container>
-    </div>
   )
 
   
@@ -45,7 +43,7 @@ const Container = styled.div `
     box-shadow: 2px 0px 10px gray;
     text-align: center;
     align-items: center;
-    position: stick;
+    position: sticky;
     overflow-x: hidden;
     overflow-y: auto;
     &::-webkit-scrollbar {
