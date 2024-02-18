@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" exact element={<div>Hi!</div>} />
+          <Route path="/" exact element={<div>Hi!<a href="/chat">Let's chat!</a></div>} />
           <Route path="/chat" exact element={<ChatScreen/>} />
         </Routes>
       </BrowserRouter>
