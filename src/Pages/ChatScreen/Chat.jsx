@@ -6,7 +6,7 @@ function Chat() {
   return (
     <ChatBoxContainer>
         <SendButton>
-          <img style={imageStyle} src={send} alt="" />
+          <img style={imageStyle} src={send} alt="Send" />
         </SendButton>
       <ChatBox>
       </ChatBox>
